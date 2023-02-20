@@ -56,9 +56,9 @@ export default function TaskList( ) {
                 : tasks.map( (element) => {
                     return (
                         <TouchableOpacity 
-                            key={element.tasksID} 
                             onPress={() => toggleDone(element)}>
                                 <TaskCard 
+                                    key={element.tasksID} 
                                     data={element}
                                     task={tasks}
                                     setTasks={setTasks}

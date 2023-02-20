@@ -42,8 +42,6 @@ export default function AddTask({setTasks}) {
     )
 }
 
-// !value ? value={""}
-
 const styles = StyleSheet.create({
     input: {
         height:40,
