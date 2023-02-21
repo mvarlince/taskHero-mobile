@@ -34,9 +34,9 @@ export default function AddTask({setTasks}) {
                 onChangeText={setTask} />
             <Button title="Add Task" 
                     onPress={ () => !task
-                                ? Alert.alert('Please enter a task') 
-                                :  handleAddNewTask()} >
-                 </Button>
+                                    ? Alert.alert('Please enter a task') 
+                                    :  handleAddNewTask()} >
+            </Button>
         </View>
         </>
     )
