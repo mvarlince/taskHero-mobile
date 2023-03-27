@@ -50,8 +50,8 @@ export default function TaskList( ) {
                 resizeMode="cover"
                 style={styles.bg} >
             </ImageBackground> 
-            {
-                !tasks
+
+            {!tasks
                 ? <Text> Loading... </Text>
                 : tasks.map( (element) => {
                     return (

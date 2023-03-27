@@ -21,7 +21,6 @@ export default function TaskCard({data, setTasks}) {
                         onPress={() => handleDelete()}
                         style={styles2.deleteBtn}>  </Button>
             </View>
-
         </>
     )
 }
