@@ -1,4 +1,4 @@
-import { View, Text, StyleSheet, Button} from 'react-native'
+import { View, Text, StyleSheet, Button, Touchable, TouchableOpacity, TouchableWithoutFeedback} from 'react-native'
 
 export default function TaskCard({data, setTasks}) {
 
@@ -17,9 +17,13 @@ export default function TaskCard({data, setTasks}) {
         <>
             <View style={styles2.taskCardContainer}>
                 <Text style={data.done ? styles2.textColorDone : styles2.textColor}> {data.task} </Text>
+                <TouchableWithoutFeedback>
+                    <View>
                 <Button title="delete" 
                         onPress={() => handleDelete()}
                         style={styles2.deleteBtn}>  </Button>
+                </View>
+                </TouchableWithoutFeedback>
             </View>
         </>
     )
